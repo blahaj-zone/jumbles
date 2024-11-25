@@ -164,6 +164,20 @@ If you build something on top of this, it must also be open source and licensed 
 
 ## Roadmap
 
+- ActivityPub federation support
+  - [x] Accept / Reject followers
+  - Inbox management:
+    - [x] Receive notes (dm/post/boost)
+  - Outbox management:
+    - [x] Boost notes to followers
+    - [x] Send direct notes to followers
+  - Follower management:
+    - [x] Approve followers (auto and approved)
+    - [x] Reject followers
+    - [x] Block followers
+    - [x] Redact boosted notes from followers
+  - [ ] Group profiles
+  - [x] WebFinger support
 - Database support
   - [x] BadgerDB
   - [ ] MongoDB
