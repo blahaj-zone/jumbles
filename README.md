@@ -17,12 +17,12 @@ The flagship instance is at [jumbles.zone](https://jumbles.zone), and is heavily
     - Admin: Can manage group settings and invite/promote users.
     - Moderator: Can manage group content and membership.
     - Approver: Can approve or reject membership requests.
-  - "Approval required" group membership
-    - Fediverse users who request to follow are messaged a link to an application form.
-    - Approvers must approve applications before the follow is approved.
   - Public and private group options
     - Public groups are open to follows and have no membership requirements.
     - Private groups require application and approval.
+  - "Approval required" group membership process
+    - Fediverse users who request to follow are messaged a link to an application form.
+    - Approvers must approve applications before the follow is accepted.
   - Group moderation tools
     - All groups (public and private) can be moderated by blocking bad actors.
     - Banned users can have all of their content redacted.
