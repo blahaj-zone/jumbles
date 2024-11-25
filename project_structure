@@ -1,0 +1,51 @@
+Project Structure Overview
+=========================
+
+├── cmd/                      # Application entry points
+│   └── server/
+│       └── main.go          # Main server application entry point
+└── internal/                 # Private application code
+    ├── store/               # Data storage layer
+    │   ├── interfaces.go    # Storage interface definitions
+    │   └── badger.go       # BadgerDB implementation
+    │
+    ├── activitypub/         # ActivityPub protocol implementation
+    │   ├── models.go       # ActivityPub data models
+    │   ├── delivery.go     # Federation message delivery
+    │   └── handlers.go     # ActivityPub HTTP endpoints
+    │
+    └── api/                 # API layer
+        ├── group.go        # Route grouping and organization
+        └── middleware.go   # HTTP middleware components
+
+Package Descriptions
+-------------------
+1. cmd/server/
+   - Contains the main application entry point
+   - Initializes and configures the server
+   - Sets up dependency injection
+
+2. internal/store/
+   - Handles data persistence
+   - Defines storage interfaces for dependency injection
+   - Implements BadgerDB as the storage backend
+   - Manages data access patterns
+
+3. internal/activitypub/
+   - Implements the ActivityPub federation protocol
+   - Defines protocol data models
+   - Handles federation message delivery
+   - Processes incoming ActivityPub requests
+
+4. internal/api/
+   - Manages HTTP routing and middleware
+   - Handles API endpoint organization
+   - Implements request/response processing
+
+Architecture Notes
+----------------
+- Uses internal packages to prevent external usage
+- Follows clean architecture principles
+- Clear separation of concerns between packages
+- Modular design for maintainability
+- Federation-ready with ActivityPub support
